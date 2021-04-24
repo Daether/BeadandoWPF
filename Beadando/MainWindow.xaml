@@ -17,29 +17,29 @@
         <TextBlock Margin="15,0,10,359" Grid.ColumnSpan="4"><Run Text="Számla"/><Run Text=" "/><Run Text="1"/></TextBlock>
         <TextBlock Margin="1,0,272,359" RenderTransformOrigin="-0.103,0.774" Grid.Column="2" Grid.ColumnSpan="2"><Run Text="Számla1"/></TextBlock>
         <TextBlock Margin="15,20,5,339" Grid.ColumnSpan="4"><Run Text="Számla tulajdonos"/><Run Text=":"/></TextBlock>
-        <TextBlock Margin="15,40,6,319" Grid.ColumnSpan="4"><Run Text="Számla "/><Run Text="egyenlege"/><Run Text=":"/></TextBlock>
+        <TextBlock Margin="15,60,6,299" Grid.ColumnSpan="4"><Run Text="Számla "/><Run Text="egyenlege"/><Run Text=":"/></TextBlock>
         <TextBlock Margin="1,20,216,339" Grid.Column="2" Grid.ColumnSpan="2"><Run Text="Számla tulajdonos"/><Run Text=":"/></TextBlock>
-        <TextBlock Margin="1,40,216,319" Grid.Column="2" Grid.ColumnSpan="2"><Run Text="Számla "/><Run Text="egyenlege"/><Run Text=":"/></TextBlock>
-        <TextBox RenderTransformOrigin="4.644,2.498" Margin="0,20,43,379" Grid.Column="1" IsEnabled="False"/>
-        <TextBlock Grid.Column="3" Margin="239,40,-114,319" Text="Ft"/>
-        <TextBlock Margin="241,40,269,359" Text="Ft" Grid.Column="1" Grid.ColumnSpan="3"/>
-        <TextBlock Margin="21,341,0,18" Grid.ColumnSpan="4"><Run Text="Beviteli mező"/><Run Text=":"/></TextBlock>
-        <TextBlock Margin="241,341,172,18" Text="Ft" Grid.Column="1" Grid.ColumnSpan="3"/>
-        <TextBlock Margin="6,341,212,18" Grid.Column="2" Grid.ColumnSpan="2"><Run Text="Beviteli mező"/><Run Text=":"/></TextBlock>
-        <TextBlock Grid.Column="3" Margin="239,341,-114,18" Text="Ft"/>
-        <Button Margin="0,366,215,33" Click="Button_Click" Content="Utalás" Grid.Column="1"/>
-        <Button Margin="72,366,143,33" Click="Button_Click" Content="Kivét" RenderTransformOrigin="0.975,0.321" Grid.Column="1"/>
-        <Button Margin="30,366,10,33" Click="Button_Click" Content="Feltöltés" RenderTransformOrigin="0.036,0.372"/>
-        <Button Margin="151,366,34,33" Click="Button_Click" Content="Tulaj név váltás" Grid.Column="1"/>
-        <TextBox RenderTransformOrigin="4.644,2.498" Margin="0,40,43,359" Grid.Column="1" IsEnabled="False"/>
-        <TextBox RenderTransformOrigin="4.644,2.498" Margin="0,341,43,58" Grid.Column="1"/>
-        <TextBox RenderTransformOrigin="4.644,2.498" Margin="0,20,48,379" Grid.Column="3" IsEnabled="False"/>
-        <TextBox RenderTransformOrigin="4.644,2.498" Margin="0,40,48,359" Grid.Column="3" IsEnabled="False"/>
-        <TextBox RenderTransformOrigin="4.644,2.498" Margin="0,341,48,58" Grid.Column="3"/>
-        <Button Margin="19,366,10,33" Click="Button_Click" Content="Feltöltés" RenderTransformOrigin="0.036,0.372" Grid.Column="2"/>
-        <Button Margin="4,366,216,33" Click="Button_Click" Content="Utalás" Grid.Column="3"/>
-        <Button Margin="76,366,144,33" Click="Button_Click" Content="Kivét" RenderTransformOrigin="0.975,0.321" Grid.Column="3"/>
-        <Button Margin="148,366,41,33" Click="Button_Click" Content="Tulaj név váltás" Grid.Column="3"/>
-
+        <TextBlock Margin="0,65,217,294" Grid.Column="2" Grid.ColumnSpan="2"><Run Text="Számla "/><Run Text="egyenlege"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="TBoxU1" RenderTransformOrigin="4.644,2.498" Margin="0,20,43,372" Grid.Column="1" IsEnabled="False"/>
+        <TextBlock Grid.Column="3" Margin="244,67,-119,292" Text="Ft"/>
+        <TextBlock Margin="238,65,272,334" Text="Ft" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <TextBlock Margin="30,306,-9,53" Grid.ColumnSpan="4"><Run Text="Beviteli mező"/><Run Text=":"/></TextBlock>
+        <TextBlock Margin="239,306,174,53" Text="Ft" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <TextBlock Margin="19,306,199,53" Grid.Column="2" Grid.ColumnSpan="2"><Run Text="Beviteli mező"/><Run Text=":"/></TextBlock>
+        <TextBlock Grid.Column="3" Margin="239,306,-114,53" Text="Ft"/>
+        <Button x:Name="Feltolt1" Margin="30,341,10,53" Click="Button_Click" Content="Feltöltés" RenderTransformOrigin="0.036,0.372"/>
+        <TextBox x:Name="TBoxL1" RenderTransformOrigin="4.644,2.498" Margin="0,60,43,330" Grid.Column="1" IsEnabled="False"/>
+        <TextBox x:Name="TextBoxWrL" RenderTransformOrigin="4.644,2.498" Margin="0,301,43,89" Grid.Column="1"/>
+        <TextBox x:Name="TBoxU2" RenderTransformOrigin="4.644,2.498" Margin="0,20,43,372" Grid.Column="3" IsEnabled="False"/>
+        <TextBox x:Name="TBoxL2" RenderTransformOrigin="4.644,2.498" Margin="0,60,43,330" Grid.Column="3" IsEnabled="False"/>
+        <TextBox x:Name="TextBoxWrR" RenderTransformOrigin="4.644,2.498" Margin="0,301,48,89" Grid.Column="3"/>
+        <Button x:Name="Feltolt2" Margin="19,341,10,53" Click="Upload2" Content="Feltöltés" RenderTransformOrigin="0.036,0.372" Grid.Column="2"/>
+        <Button x:Name="Kivet1" Click="KivetelAlfa" Grid.Column="1" Margin="67,341,148,53" Content="Kivét&#xD;&#xA;"/>
+        <Button x:Name="Kivet2" Click="KivetelBeta" Content="Kivét" Margin="67,341,153,53" Grid.Column="3"/>
+        <Button x:Name="UtalAlfa" Click="UtalasAlfa" Content="Utalás" Margin="114,341,223,53" Grid.ColumnSpan="2"/>
+        <Button x:Name="UtalBeta" Click="UtalasBeta" Content="Utalás" Margin="104,341,227,53" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <Button x:Name="NevValtL" Click="TulajNevValtL" Content="Tulaj név váltás" Margin="143,341,39,53" Grid.Column="1"/>
+        <Button x:Name="NevValtR" Click="TulajNevValtR" Content="Tulaj név váltás" Margin="144,341,43,53" Grid.Column="3"/>
+        <!--<TextBlock Grid.Row="1" Text="{Binding ErrorMessage}" Foreground="DarkRed"/>-->
     </Grid>
 </Window>
