@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Beadando</name>
+    </assembly>
+    <members>
+        <member name="T:Beadando.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Beadando.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Beadando.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Beadando.Core">
+            <summary>
+            Műveleteket tartalmazó osztály
+            </summary>
+        </member>
+        <member name="M:Beadando.Core.#ctor">
+            <summary>
+            Üres konstruktor
+            </summary>
+        </member>
+        <member name="F:Beadando.Core.ertek">
+            <summary>
+            segédváltozó metódus returnhez
+            </summary>
+        </member>
+        <member name="M:Beadando.Core.Feltolt(System.String,System.String)">
+            <summary>
+            Feltöltés a beírt értékkel a számla egyenlegére
+            </summary>
+            <param name="e1">érték1:amit hozzáadunk az egyenleghez</param>
+            <param name="e2">érték2:az egyenleg jelenlegi értéke</param>
+            <returns>A két érték összegével tér vissza(int).</returns>
+        </member>
+        <member name="M:Beadando.Core.Kivesz(System.String,System.String)">
+            <summary>
+            Beírt érték kivétele a számla egyenlegről.
+            </summary>
+            <param name="ossz">Egyenleg, amiből kivonunk</param>
+            <param name="kivon">Beírt szám, amit kivonunk</param>
+            <returns>A kivonás erredményével tér vissza(int).</returns>
+        </member>
+        <member name="T:Beadando.Invoice">
+            <summary>
+            Számla adatait leíró osztály
+            </summary>
+        </member>
+        <member name="P:Beadando.Invoice.OwnerName">
+            <summary>
+            A számla tulaj neve
+            </summary>
+            <value>
+            String értéket tartalmazó változó.
+            </value>
+        </member>
+        <member name="P:Beadando.Invoice.Balance">
+            <summary>
+            A számla egyenlege
+            </summary>
+            <value>
+            Int értéket tartalmazó változó, alapértelmezett értéke 0.
+            </value>
+        </member>
+        <member name="M:Beadando.Invoice.#ctor">
+            <summary>
+            Üres konstruktor
+            </summary>
+        </member>
+        <member name="T:Beadando.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:Beadando.MainWindow.invoice">
+            <summary>
+            Számlák listája
+            </summary>
+        </member>
+        <member name="F:Beadando.MainWindow.c">
+            <summary>
+            Core osztály példánya
+            </summary>
+        </member>
+        <member name="F:Beadando.MainWindow.ertek">
+            <summary>
+            segédváltozó visszatérési értékekhez
+            </summary>
+        </member>
+        <member name="M:Beadando.MainWindow.#ctor">
+            <summary>
+            Új invoice adatokat rögzít, GUI-t rajzol
+            </summary>
+        </member>
+        <member name="M:Beadando.MainWindow.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Baloldali Feltöltés gomb eseményét definiálja
+            </summary>
+            <param name="sender">Hívást indító objektum</param>
+            <param name="e">Esemény, ami bekövetkezett</param>
+        </member>
+        <member name="M:Beadando.MainWindow.Upload2(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Jobboldali Feltöltés gomb eseményét definiálja
+            </summary>
+            <param name="sender">Hívást indító objektum</param>
+            <param name="e">Esemény, ami bekövetkezett</param>
+        </member>
+        <member name="M:Beadando.MainWindow.KivetelAlfa(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Baloldali Kivét gomb eseményét definiálja
+            </summary>
+            <param name="sender">Hívást indító objektum</param>
+            <param name="e">Esemény, ami bekövetkezett</param>
+        </member>
+        <member name="M:Beadando.MainWindow.KivetelBeta(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Jobboldali Kivét gomb eseményét definiálja
+            </summary>
+            <param name="sender">Hívást indító objektum</param>
+            <param name="e">Esemény, ami bekövetkezett</param>
+        </member>
+        <member name="M:Beadando.MainWindow.UtalasAlfa(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Baloldali Utalás gomb eseményét definiálja
+            </summary>
+            <param name="sender">Hívást indító objektum</param>
+            <param name="e">Esemény, ami bekövetkezett</param>
+        </member>
+        <member name="M:Beadando.MainWindow.UtalasBeta(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Jobboldali Utalás gomb eseményét definiálja
+            </summary>
+            <param name="sender">Hívást indító objektum</param>
+            <param name="e">Esemény, ami bekövetkezett</param>
+        </member>
+        <member name="M:Beadando.MainWindow.TulajNevValtL(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Baloldali Tulaj név váltás gomb eseményét definiálja
+            </summary>
+            <param name="sender">Hívást indító objektum</param>
+            <param name="e">Esemény, ami bekövetkezett</param>
+        </member>
+        <member name="M:Beadando.MainWindow.TulajNevValtR(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Jobboldali Tulaj név váltás gomb eseményét definiálja
+            </summary>
+            <param name="sender">Hívást indító objektum</param>
+            <param name="e">Esemény, ami bekövetkezett</param>
+        </member>
+        <member name="M:Beadando.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Beadando.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Beadando.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Beadando.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
